@@ -1,0 +1,15 @@
+打開cmd
+1.
+查看windows本機使用者功能
+輸入 lusrmgr.msc
+但這只能找本機使用者,且可以找到隱藏帳號
+
+2.
+或者
+輸入 control userpasswords2
+這會找到AD使用者和本機使用者
+要帳號清查可以用它,但好像某些本機隱藏帳號會找不到
+
+3.
+查看windows使用者最後登入時間
+net user 使用者帳號
