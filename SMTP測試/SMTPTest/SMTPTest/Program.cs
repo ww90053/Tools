@@ -11,12 +11,13 @@ class Program
         {
             // 從設定檔中讀取參數
             string smtpServer = ConfigurationManager.AppSettings["SmtpServer"]; // SMTP 伺服器地址
+            string port = ConfigurationManager.AppSettings["port"];            
             string senderEmail = ConfigurationManager.AppSettings["SenderEmail"]; // 發件人的電子郵件地址
             string senderPassword = ConfigurationManager.AppSettings["SenderPassword"]; // 發件人的郵箱密碼
             string recipientEmail = ConfigurationManager.AppSettings["RecipientEmail"]; // 收件人的電子郵件地址
 
             // 設定 SMTP 伺服器地址和端口
-            SmtpClient client = new SmtpClient(smtpServer, 25);
+            SmtpClient client = new SmtpClient(smtpServer, Convert.ToInt32(port));
 
             // 設定發件人的郵箱地址和密碼
             client.Credentials = new NetworkCredential(senderEmail, senderPassword);
