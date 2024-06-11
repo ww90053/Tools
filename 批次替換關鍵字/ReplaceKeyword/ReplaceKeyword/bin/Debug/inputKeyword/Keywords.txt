@@ -1,0 +1,31 @@
+using System.Data.OracleClient;|using System.Data.SqlClient;
+System.Data.OracleClient.|System.Data.SqlClient.
+ORDBConnectionString|MSDBConnectionString_toTest
+o_Function.ShowErrorAlert|o_CommonService.ShowErrorAlert
+o_Function.|o_DBFactory.ABC_toTest.
+DB_CLASS.|o_DBFactory.ABC_toTest.
+DBClass.|o_DBFactory.ABC_toTest.
+DBClass db = new DBClass();|var db = o_DBFactory.ABC_toTest;
+TPPDDB.App_Code.o_DBFactory.ABC_toTest.|o_DBFactory.ABC_toTest.
+_2_salary.o_DBFactory.ABC_toTest.|o_DBFactory.ABC_toTest.
+o_DBFactory.ABC_toTest.GetValueFromDB(|o_DBFactory.ABC_toTest.GetValue(
+LogicCommon.getFirstColumn(|o_DBFactory.ABC_toTest.GetValue(
+o_DBFactory.ABC_toTest.DataSelect(sql, " ");|o_DBFactory.ABC_toTest.DataSelect(sql);
+o_n_Function.RegixSQL|o_DBFactory.ABC_toTest.RegixSQL
+OracleHelper.ExecuteNonQuery(OracleHelper.connStr, CommandType.Text,|o_DBFactory.ABC_toTest.ExecuteNonQuery(
+OracleHelper.ExecuteDataset(OracleHelper.connStr, CommandType.Text,|o_DBFactory.ABC_toTest.ExecuteDataset(
+OracleHelper.ExecuteScalar(OracleHelper.connStr, CommandType.Text,|o_DBFactory.ABC_toTest.GetValue(
+OracleParameter|SqlParameter
+OracleConnection|SqlConnection
+OracleTransaction|SqlTransaction
+OracleCommand|SqlCommand
+OracleDataReader|SqlDataReader
+OracleType|SqlDbType
+SqlDbType.Number|SqlDbType.Float
+SqlDbType .Number|SqlDbType.Float
+SqlDbType.Int32|SqlDbType.Int
+ExecuteOracleScalar|ExecuteScalar
+o_DBFactory.ABC_toTest.RegixSQL(|o_DBFactory.ABC_toTest.RegexSQL(
+o_to_Function otf = new o_to_Function();|var otf=o_DBFactory.ABC_toTest;
+lm.RegixSQL(|lm.RegexSQL(
+otf.execSQL(|otf.ExecuteNonQuery(
