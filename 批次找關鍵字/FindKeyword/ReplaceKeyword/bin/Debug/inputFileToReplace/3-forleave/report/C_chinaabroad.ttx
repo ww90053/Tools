@@ -1,0 +1,40 @@
+NUM	Number		
+MZ_ID	String	10	
+MZ_NAME	String	36	
+MZ_EXAD	String	2000	
+MZ_EXUNIT	String	2000	
+MZ_OCCC	String	2000	
+MZ_CODE	String	24	
+MZ_RANK1	String	2000	
+MZ_SYSDAY	String	7	
+MZ_IDATE1	String	7	
+MZ_ITIME1	String	6	
+MZ_ODATE	String	7	
+MZ_OTIME	String	6	
+MZ_TDAY	Number		
+MZ_TTIME	Number		
+MZ_CAUSE	String	600	
+MZ_MEMO	String	60	
+MZ_SWT	String	1	
+MZ_TADD	String	300	
+MZ_RNAME	String	36	
+ROCCC	String	2000	
+MZ_ROCCC	String	8	
+MZ_CHK1	String	1	
+MZ_SYSTIME	String	5	
+MZ_FOREIGN	String	1	
+MZ_CHINA	String	1	
+MZ_LASTYEARJOBLOCATION	String	50	
+MAX_C	Number		
+B_IDATE	String	7	
+B_ITIME	String	6	
+B_ODATE	String	7	
+B_OTIME	String	6	
+B_TDAY	Number		
+B_TIME	Number		
+FDATE	String	7	
+HDAY	String	10	
+USEHDAY	String	10	
+BIR	String	7	
+MZ_MOVETEL	String	12	
+MZ_ENAME	String	12	

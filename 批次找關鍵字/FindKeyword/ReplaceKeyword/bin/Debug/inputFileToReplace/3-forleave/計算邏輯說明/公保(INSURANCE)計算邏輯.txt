@@ -1,0 +1,25 @@
+﻿程式碼請參考  \TPPDB\2-salary\Salary.cs	
+public static int getInsurancePay(string policeType, bool isPolice, string spt, string tempSpt, string INSURANCE_TYPE)
+        
+
+公保計算邏輯
+
+先取得員警的MZ_SRANK欄位
+判斷G或P開頭代表警職
+
+再根據MZ_OCCC
+判斷特定職稱代碼:"0014":"0015":"0016":"1179":"Z014":"Z015":"Z016":
+上述職稱,NAME1參數=2,其餘的NAME1參數=1
+
+再取得 俸點MZ_SPT和暫之俸點(MZ_SPT1),有MZ_SPT1者優先
+
+
+如果是警職
+SELECT INSURANCE_F FROM B_SALARY WHERE NAME1=:NAME1 AND ORIGIN2=:ORIGIN
+非警職
+SELECT INSURANCE_F FROM B_SALARY WHERE NAME1=:NAME1 AND ORIGIN1=:ORIGIN
+
+NAME1:上述的NAME1參數,1或2
+ORIGIN:上述的俸點
+
+最後再根據到職日,判斷抓取INSURANCE_F或者INSURANCE_D

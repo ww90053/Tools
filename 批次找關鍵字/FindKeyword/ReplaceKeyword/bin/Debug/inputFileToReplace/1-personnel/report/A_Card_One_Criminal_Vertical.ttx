@@ -1,0 +1,7 @@
+MZ_AD	string	50
+MZ_OCCC	string	50
+MZ_NAME	string	50
+MZ_IDNO	string	50
+MZ_NO1	string	50
+MZ_DATE	string	50
+EXP_DATE	string	50

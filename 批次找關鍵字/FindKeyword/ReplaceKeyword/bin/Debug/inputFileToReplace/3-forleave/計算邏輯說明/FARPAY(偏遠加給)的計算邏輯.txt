@@ -1,0 +1,27 @@
+﻿程式碼請參考  \TPPDB\2-salary\Salary.cs
+public static int getFARPAY(Police police)
+
+FARPAY(偏遠加給?)的計算邏輯
+根據寫死的派出所代碼,對應金額
+cMoney.Add("D609", 4120);//福山(D609)
+cMoney.Add("D60H", 4120);
+cMoney.Add("D90K", 4120);
+cMoney.Add("D60U", 4120);//德拉楠派出所(D60U)
+cMoney.Add("D60E", 3090);
+cMoney.Add("D60G", 3090);
+cMoney.Add("D60I", 3090);
+cMoney.Add("D60J", 3090);
+cMoney.Add("D60N", 3090);//信賢(D60N)
+cMoney.Add("D60K", 3090);
+cMoney.Add("D60L", 3090);
+cMoney.Add("D60M", 3090);//忠治(D60M)
+cMoney.Add("D90F", 3090);
+cMoney.Add("D60S", 3090);//桶壁派出所
+cMoney.Add("D60T", 3090);//哪哮派出所
+
+然後再計算邊區年資,超過一年者開始給
+"邊區年資"為MZ_FYEAR欄位
+
+然後
+金額為 3090者, FARPAY=薪資*邊區年資*0.1+3090
+金額為 4120者, FARPAY=薪資*邊區年資*0.2+4120

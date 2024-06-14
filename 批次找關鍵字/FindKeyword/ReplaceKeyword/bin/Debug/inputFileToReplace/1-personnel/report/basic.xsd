@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="basic" targetNamespace="http://tempuri.org/basic.xsd" xmlns:mstns="http://tempuri.org/basic.xsd" xmlns="http://tempuri.org/basic.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="basic" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="basic" msprop:Generator_DataSetName="basic" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SN" msprop:Generator_UserColumnName="SN" msprop:Generator_ColumnVarNameInTable="columnSN" msprop:Generator_ColumnPropNameInRow="SN" msprop:Generator_ColumnPropNameInTable="SNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_OCCC" msprop:Generator_UserColumnName="MZ_OCCC" msprop:Generator_ColumnVarNameInTable="columnMZ_OCCC" msprop:Generator_ColumnPropNameInRow="MZ_OCCC" msprop:Generator_ColumnPropNameInTable="MZ_OCCCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ZZZZZ" msprop:Generator_UserColumnName="ZZZZZ" msprop:Generator_ColumnPropNameInRow="ZZZZZ" msprop:Generator_ColumnVarNameInTable="columnZZZZZ" msprop:Generator_ColumnPropNameInTable="ZZZZZColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_NAME" msprop:Generator_UserColumnName="MZ_NAME" msprop:Generator_ColumnVarNameInTable="columnMZ_NAME" msprop:Generator_ColumnPropNameInRow="MZ_NAME" msprop:Generator_ColumnPropNameInTable="MZ_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_BIR" msprop:Generator_UserColumnName="MZ_BIR" msprop:Generator_ColumnVarNameInTable="columnMZ_BIR" msprop:Generator_ColumnPropNameInRow="MZ_BIR" msprop:Generator_ColumnPropNameInTable="MZ_BIRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_CAREER_AD" msprop:Generator_UserColumnName="MZ_CAREER_AD" msprop:Generator_ColumnVarNameInTable="columnMZ_CAREER_AD" msprop:Generator_ColumnPropNameInRow="MZ_CAREER_AD" msprop:Generator_ColumnPropNameInTable="MZ_CAREER_ADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_CAREER_UNIT" msprop:Generator_UserColumnName="MZ_CAREER_UNIT" msprop:Generator_ColumnVarNameInTable="columnMZ_CAREER_UNIT" msprop:Generator_ColumnPropNameInRow="MZ_CAREER_UNIT" msprop:Generator_ColumnPropNameInTable="MZ_CAREER_UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_CAREER_ADATE" msprop:Generator_UserColumnName="MZ_CAREER_ADATE" msprop:Generator_ColumnVarNameInTable="columnMZ_CAREER_ADATE" msprop:Generator_ColumnPropNameInRow="MZ_CAREER_ADATE" msprop:Generator_ColumnPropNameInTable="MZ_CAREER_ADATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_PHONO" msprop:Generator_UserColumnName="MZ_PHONO" msprop:Generator_ColumnVarNameInTable="columnMZ_PHONO" msprop:Generator_ColumnPropNameInRow="MZ_PHONO" msprop:Generator_ColumnPropNameInTable="MZ_PHONOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_PHONH" msprop:Generator_UserColumnName="MZ_PHONH" msprop:Generator_ColumnVarNameInTable="columnMZ_PHONH" msprop:Generator_ColumnPropNameInRow="MZ_PHONH" msprop:Generator_ColumnPropNameInTable="MZ_PHONHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_MOVETEL" msprop:Generator_UserColumnName="MZ_MOVETEL" msprop:Generator_ColumnVarNameInTable="columnMZ_MOVETEL" msprop:Generator_ColumnPropNameInRow="MZ_MOVETEL" msprop:Generator_ColumnPropNameInTable="MZ_MOVETELColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_SCHOOL" msprop:Generator_UserColumnName="MZ_SCHOOL" msprop:Generator_ColumnVarNameInTable="columnMZ_SCHOOL" msprop:Generator_ColumnPropNameInRow="MZ_SCHOOL" msprop:Generator_ColumnPropNameInTable="MZ_SCHOOLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_SCHOOL_DEPARTMENT" msprop:Generator_UserColumnName="MZ_SCHOOL_DEPARTMENT" msprop:Generator_ColumnVarNameInTable="columnMZ_SCHOOL_DEPARTMENT" msprop:Generator_ColumnPropNameInRow="MZ_SCHOOL_DEPARTMENT" msprop:Generator_ColumnPropNameInTable="MZ_SCHOOL_DEPARTMENTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_SCHOOL_YEAR" msprop:Generator_UserColumnName="MZ_SCHOOL_YEAR" msprop:Generator_ColumnVarNameInTable="columnMZ_SCHOOL_YEAR" msprop:Generator_ColumnPropNameInRow="MZ_SCHOOL_YEAR" msprop:Generator_ColumnPropNameInTable="MZ_SCHOOL_YEARColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXAM_NAME" msprop:Generator_UserColumnName="EXAM_NAME" msprop:Generator_ColumnVarNameInTable="columnEXAM_NAME" msprop:Generator_ColumnPropNameInRow="EXAM_NAME" msprop:Generator_ColumnPropNameInTable="EXAM_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IMG" msprop:Generator_UserColumnName="IMG" msprop:Generator_ColumnVarNameInTable="columnIMG" msprop:Generator_ColumnPropNameInRow="IMG" msprop:Generator_ColumnPropNameInTable="IMGColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_UserColumnName="UNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ADATE" msprop:Generator_UserColumnName="ADATE" msprop:Generator_ColumnPropNameInRow="ADATE" msprop:Generator_ColumnVarNameInTable="columnADATE" msprop:Generator_ColumnPropNameInTable="ADATEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+OVER_DAY	String	10	
+MEMO	String	10	
+INTIME	String	8	
+OUTTIME	String	8	
+OVER_HOUR	Number		
+OVER_MIN	Number		
+KIND	String	10	
+OVER_REMARK	String	100	
+REVIEW	String	5	

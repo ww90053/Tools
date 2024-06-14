@@ -1,0 +1,34 @@
+﻿#相關功能
+6.1 超勤時數輸入
+~/3-forleave/C_ForLeaveOvertime_OVERTIME_FREE_KEYIN.aspx
+
+#相關資料表
+-C_DUTYTABLE_PERSONAL  每天的工作項目 與 超勤時數 & 超勤補休時數 之計算結果
+	-ISDIRECTTIME 扣除補休時數後的超勤時數
+	-CONVERT_REST_HOURS,超勤補休時數
+	-DUTYSTOPOFF,休停
+	-DUTYUSERCLASSIFY,內外勤
+	-DUTYITEM1~26,代表每個小時的工作項目代碼
+
+#相關模組
+-LogicModel_C_DUTYTABLE_PERSONAL.cs
+
+#計算邏輯-判斷是否為上班日
+內勤：遇到國定假日就會判定為放假（非上班日），無論他是否勾了休停
+外勤：勾了休停才算放假（非上班日）
+是否為上班日，則會影響超勤時數的判定
+
+#計算邏輯-判斷超勤時數
+具體來說
+上班日：一般工作時數+請假時數-8=超勤時數
+非上班日：一般工作時數=超勤時數　（這次調整之後）
+
+這邊說的還不扣除掉超勤補休時數
+
+#計算邏輯-超勤時數 與 超勤補休時數
+超勤補休時數,相當於把超勤時數拿去申請補休
+
+計算步驟如下
+-先計算出當天的超勤時數
+-UI上輸入CONVERT_REST_HOURS(超勤補休時數)，會有一些防呆先避免它超過超勤時數
+-ISDIRECTTIME＝當天的超勤時數－CONVERT_REST_HOURS(超勤補休時數)

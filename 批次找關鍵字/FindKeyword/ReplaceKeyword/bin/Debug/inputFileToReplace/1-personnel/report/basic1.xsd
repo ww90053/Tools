@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="basic1" targetNamespace="http://tempuri.org/basic1.xsd" xmlns:mstns="http://tempuri.org/basic1.xsd" xmlns="http://tempuri.org/basic1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="basic1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="basic1" msprop:Generator_DataSetName="basic1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PIC" msprop:Generator_UserColumnName="PIC" msprop:Generator_ColumnVarNameInTable="columnPIC" msprop:Generator_ColumnPropNameInRow="PIC" msprop:Generator_ColumnPropNameInTable="PICColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="MZ_SRANK" msprop:Generator_UserColumnName="MZ_SRANK" msprop:Generator_ColumnVarNameInTable="columnMZ_SRANK" msprop:Generator_ColumnPropNameInRow="MZ_SRANK" msprop:Generator_ColumnPropNameInTable="MZ_SRANKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_NAME" msprop:Generator_UserColumnName="MZ_NAME" msprop:Generator_ColumnVarNameInTable="columnMZ_NAME" msprop:Generator_ColumnPropNameInRow="MZ_NAME" msprop:Generator_ColumnPropNameInTable="MZ_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_ID" msprop:Generator_UserColumnName="MZ_ID" msprop:Generator_ColumnVarNameInTable="columnMZ_ID" msprop:Generator_ColumnPropNameInRow="MZ_ID" msprop:Generator_ColumnPropNameInTable="MZ_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_BIR" msprop:Generator_UserColumnName="MZ_BIR" msprop:Generator_ColumnVarNameInTable="columnMZ_BIR" msprop:Generator_ColumnPropNameInRow="MZ_BIR" msprop:Generator_ColumnPropNameInTable="MZ_BIRColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_SCHOOL" msprop:Generator_UserColumnName="MZ_SCHOOL" msprop:Generator_ColumnVarNameInTable="columnMZ_SCHOOL" msprop:Generator_ColumnPropNameInRow="MZ_SCHOOL" msprop:Generator_ColumnPropNameInTable="MZ_SCHOOLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PIC1" msprop:Generator_UserColumnName="PIC1" msprop:Generator_ColumnVarNameInTable="columnPIC1" msprop:Generator_ColumnPropNameInRow="PIC1" msprop:Generator_ColumnPropNameInTable="PIC1Column" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="MZ_SRANK1" msprop:Generator_UserColumnName="MZ_SRANK1" msprop:Generator_ColumnVarNameInTable="columnMZ_SRANK1" msprop:Generator_ColumnPropNameInRow="MZ_SRANK1" msprop:Generator_ColumnPropNameInTable="MZ_SRANK1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_NAME1" msprop:Generator_UserColumnName="MZ_NAME1" msprop:Generator_ColumnVarNameInTable="columnMZ_NAME1" msprop:Generator_ColumnPropNameInRow="MZ_NAME1" msprop:Generator_ColumnPropNameInTable="MZ_NAME1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_ID1" msprop:Generator_UserColumnName="MZ_ID1" msprop:Generator_ColumnVarNameInTable="columnMZ_ID1" msprop:Generator_ColumnPropNameInRow="MZ_ID1" msprop:Generator_ColumnPropNameInTable="MZ_ID1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_BIR1" msprop:Generator_UserColumnName="MZ_BIR1" msprop:Generator_ColumnVarNameInTable="columnMZ_BIR1" msprop:Generator_ColumnPropNameInRow="MZ_BIR1" msprop:Generator_ColumnPropNameInTable="MZ_BIR1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_SCHOOL1" msprop:Generator_UserColumnName="MZ_SCHOOL1" msprop:Generator_ColumnVarNameInTable="columnMZ_SCHOOL1" msprop:Generator_ColumnPropNameInRow="MZ_SCHOOL1" msprop:Generator_ColumnPropNameInTable="MZ_SCHOOL1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_UserColumnName="UNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ADATE" msprop:Generator_UserColumnName="ADATE" msprop:Generator_ColumnVarNameInTable="columnADATE" msprop:Generator_ColumnPropNameInRow="ADATE" msprop:Generator_ColumnPropNameInTable="ADATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MZ_OCCC" msprop:Generator_UserColumnName="MZ_OCCC" msprop:Generator_ColumnPropNameInRow="MZ_OCCC" msprop:Generator_ColumnVarNameInTable="columnMZ_OCCC" msprop:Generator_ColumnPropNameInTable="MZ_OCCCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

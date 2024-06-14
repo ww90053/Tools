@@ -1,0 +1,27 @@
+﻿程式碼請參考  \01_Code\TPPDB\3-forleave\CFService.cs
+public bool SynchronizeOverTime(C_OVERTIME_BASE_Model model, string TPMFION = "")
+
+資料表:C_OVERTIME_BASE 每天加班的資料
+
+正常情況下(注意!下面說的時間數都是以分鐘為單位):
+OVER_TOTAL當天加班時間數=
+SURPLUS_TOTAL剩餘加班時間數
++PAY_HOUR	申請了多少加班時間數轉換成業務加班費?
++SHIFT_HOUR	申請了多少加班時間數轉換成輪值加班費?
++REST_HOUR	申請了多少加班時間數轉換成補休時數?
++PRIZE_HOUR	申請了多少加班時間數轉換成敘獎?
+
+有以下特殊情況:
+1.
+欄位
+OVERTIME_CHG	目前加班時間數字是否變更中?
+OVERTIME_CHG_TOTAL	要變更的加班時間數(變更中以此為主)
+如果OVERTIME_CHG='Y',改以OVERTIME_CHG_TOTAL為加班時間數,但最終流程仍會寫回OVER_TOTAL當天加班時間數
+
+2.
+IS_SIGN_RETURN='Y',代表被簽退
+這種情況可能加班資料無效的,故不會用上述計算公式更新
+
+3.
+LOCK_FLAG='Y',代表被鎖定
+這樣就不能異動資料了
