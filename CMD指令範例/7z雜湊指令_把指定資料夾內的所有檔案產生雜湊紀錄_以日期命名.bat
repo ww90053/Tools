@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-rem 你的電腦需要
+rem 你的電腦需要先安裝7zip
 rem 設定變數
 rem 自動抓取目前日期
 set currentDate=%date:~0,4%-%date:~5,2%-%date:~8,2%
