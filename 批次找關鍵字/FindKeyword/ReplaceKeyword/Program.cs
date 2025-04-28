@@ -47,6 +47,7 @@ namespace ReplaceKeyword
             list_keyword = keywordDic.Select(x => x.Key).ToList();
             foreach (string filePath in filePathList)
             {
+                Console.WriteLine("處理中:" + filePath);
                 //把檔案路徑從來源取代程目標資料夾
                 //string destinationFilePath = filePath.Replace(sourceDirectory,destinationDirectory);
 
@@ -55,11 +56,20 @@ namespace ReplaceKeyword
 
                 // Replace keywords based on the rules
                 foreach (var keyword in list_keyword)
-                {   //有找到就+1
-                    if (content.Contains(keyword))
+                {   
+                    int index = 0;
+                    int Loop_count = 0;
+                    do
                     {
-                        keywordDic[keyword] = keywordDic[keyword] + 1;
+                        index = content.IndexOf(keyword, index+1, StringComparison.Ordinal);
+                        //有找到就+1
+                        if (index!=-1)
+                        {
+                            keywordDic[keyword] = keywordDic[keyword] + 1;
+                        }
+                        Loop_count++;
                     }
+                    while (index != -1 && Loop_count <= 99999999);
                 }
             }
             //把檔案輸出
@@ -68,7 +78,7 @@ namespace ReplaceKeyword
             {
                 outputText += $"{item.Key} hit {item.Value}\r\n";
             }
-            File.WriteAllText(destinationDirectory+"output.txt", outputText);
+            File.WriteAllText(destinationDirectory + "output.txt", outputText);
         }
 
         /// <summary>
@@ -83,8 +93,10 @@ namespace ReplaceKeyword
 
             foreach (string key in lines)
             {
-                if (!string.IsNullOrWhiteSpace(key))
+                //關鍵字非空值 且 關鍵字不存在於字典中
+                if (!string.IsNullOrWhiteSpace(key)&& !dic.ContainsKey(key))
                 {
+                    //納入字典
                     dic.Add(key, 0);
                 }
             }
@@ -104,10 +116,13 @@ namespace ReplaceKeyword
             try
             {
                 // 取得指定路徑下的所有檔案
-                string[] files1 = Directory.GetFiles(path, "*.cs");
-                string[] files2 = Directory.GetFiles(path, "*.aspx");
-                filesList.AddRange(files1);
-                filesList.AddRange(files2);
+                //string[] files1 = Directory.GetFiles(path, "*.cs");
+                //filesList.AddRange(files1);
+                //files1 = Directory.GetFiles(path, "*.aspx");
+                //filesList.AddRange(files1);
+                filesList.AddRange(Directory.GetFiles(path, "*.cs"));
+                filesList.AddRange(Directory.GetFiles(path, "*.aspx"));
+                filesList.AddRange(Directory.GetFiles(path, "*.log"));
 
                 // 取得指定路徑下的所有子資料夾
                 string[] subDirectories = Directory.GetDirectories(path);
